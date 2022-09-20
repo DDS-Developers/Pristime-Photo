@@ -1,7 +1,27 @@
-import '../styles/globals.css'
+// Styles
+import "bootstrap/dist/css/bootstrap.min.css";
+import "react-datepicker/dist/react-datepicker.css";
+import "../styles/globals.css";
+
+// Scripts
+import { store } from "../store";
+import { Provider } from "react-redux";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+	return (
+		<Provider store={store}>
+			<Head>
+				<title>Pristine8.6+ Pristime Photo</title>
+				<meta
+					name="description"
+					content="Pristine8.6+ Pristime Photo"
+				/>
+				<link rel="icon" href="/favicon.ico" />
+			</Head>
+			<Component {...pageProps} />
+		</Provider>
+	);
 }
 
-export default MyApp
+export default MyApp;
