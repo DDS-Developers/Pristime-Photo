@@ -95,7 +95,7 @@ function Index() {
 									Pristime! Event 2022
 								</h2>
 								<h3 className="h4 mb-0 text-center">
-									Ciwalk, 24 September - 4 Oktober 2022
+									Ciwalk, 24 September - 9 Oktober 2022
 								</h3>
 							</div>
 						</Col>
