@@ -181,7 +181,7 @@ function Index() {
 					</Row>
 					<Row
 						style={{
-							position: "absolute",
+							position: "fixed",
 							bottom: 0,
 							left: "12px",
 							width: "100%",
