@@ -23,6 +23,10 @@ a {
 .bg-pristine-green {
 	background-color: var(--pristine-green);
 }
+
+.bg-white\:hover:hover {
+	background-color: white !important;
+}
 /*  */
 
 /* Border colors */
@@ -30,7 +34,7 @@ a {
 	border: 1px solid var(--pristine-green);
 }
 
-.border-pristine-green:\hover:hover {
+.border-pristine-green\:hover:hover {
 	border: 1px solid var(--pristine-green)
 }
 /*  */
@@ -40,7 +44,7 @@ a {
 	color: var(--pristine-green);
 }
 
-.text-pristine-green:\hover:hover {
+.text-pristine-green\:hover:hover {
 	color: var(--pristine-green) !important;
 }
 /*  */
@@ -59,5 +63,6 @@ a {
 .main {
 	background-image: url('/images/UiBgLand.png');
 	background-size: cover;
+	min-height: 100vh;
 }
 /*  */
