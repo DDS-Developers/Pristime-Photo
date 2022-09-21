@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
 					name="description"
 					content="Pristine8.6+ Pristime Photo"
 				/>
-				<link rel="icon" href="/favicon.ico" />
+				<link rel="icon" href="/images/pristine-8-6-logo.png" />
 			</Head>
 			<Component {...pageProps} />
 		</Provider>
