@@ -94,7 +94,7 @@ function Index() {
 								alt="Banner"
 								className="img-fluid mb-4 shadow-pristine-light-green"
 							/>
-							<div>
+							<div className="font-quicksand-bold">
 								<h1 className="h4 mb-0 text-center">
 									Galeri Foto
 								</h1>

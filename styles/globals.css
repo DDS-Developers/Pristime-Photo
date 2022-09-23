@@ -6,12 +6,25 @@
 	--grey: #808080;
 }
 
+/* Fonts */
+@font-face {
+	font-family: quickSandBold;
+	src: url("/fonts/Quicksand-Bold.ttf");
+}
+
+@font-face {
+	font-family: quickSandMedium;
+	src: url("/fonts/Quicksand-Medium.ttf");
+}
+/*  */
+
 html,
 body {
 	padding: 0;
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	font-family: quickSandMedium, -apple-system, BlinkMacSystemFont, Segoe UI,
+		Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+		sans-serif;
 }
 
 a {
@@ -82,6 +95,12 @@ a {
 /* Shadows */
 .shadow-pristine-light-green {
 	box-shadow: 0px 10px 10px var(--pristine-light-green);
+}
+/*  */
+
+/* Fonts */
+.font-quicksand-bold {
+	font-family: quickSandBold;
 }
 /*  */
 
