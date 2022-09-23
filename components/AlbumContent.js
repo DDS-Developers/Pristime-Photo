@@ -59,13 +59,12 @@ function AlbumContent() {
 								className="img-fluid mb-2"
 							/>
 						</motion.div>
-						<button
-							type="button"
-							className="btn text-white bg-pristine-medium-green-2 bg-pristine-medium-green-2:hover"
+						<Button
+							variant="success"
 							onClick={() => handleAddToCartClick(row)}
 						>
 							Pilih
-						</button>
+						</Button>
 					</Col>
 				))}
 			</Row>

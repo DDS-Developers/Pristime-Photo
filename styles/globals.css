@@ -3,7 +3,6 @@
 	--pristine-dark-green: #0d5c55;
 	--pristine-medium-green: #1e8e85;
 	--pristine-light-green: #9be3dd;
-	--pristine-medium-green-2: #1e8855;
 	--grey: #808080;
 }
 
@@ -39,14 +38,6 @@ a {
 
 .bg-pristine-medium-green\:hover:hover {
 	background-color: var(--pristine-medium-green) !important;
-}
-
-.bg-pristine-medium-green-2 {
-	background-color: var(--pristine-medium-green-2);
-}
-
-.bg-pristine-medium-green-2:\hover:hover {
-	background-color: var(--pristine-medium-green-2) !important;
 }
 /*  */
 
