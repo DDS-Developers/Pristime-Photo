@@ -15,6 +15,7 @@ import AlbumContent from "../components/AlbumContent";
 import LargePhotoModal from "../components/LargePhotoModal";
 import CartModal from "../components/CartModal";
 import DownloadFormModal from "../components/DownloadFormModal";
+import AlertTemplate from "../components/AlertTemplate";
 
 // Dependencies
 import Container from "react-bootstrap/Container";
@@ -29,9 +30,7 @@ import React, { useEffect } from "react";
 import { DateTime } from "luxon";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
-import Button from "react-bootstrap/Button";
 import { transitions, positions, Provider as AlertProvider } from "react-alert";
-import AlertTemplate from "react-alert-template-basic";
 
 const Row = dynamic(() => import("react-bootstrap/Row"), {
 	ssr: false,
