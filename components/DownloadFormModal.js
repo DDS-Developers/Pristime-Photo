@@ -20,7 +20,6 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import axios from "axios";
 import Swal from "sweetalert2";
 import { useEffect } from "react";
-import JsFileDownloader from "js-file-downloader";
 
 const schema = yup.object().shape({
 	name: yup.string().required("Silakan isi nama kamu."),
@@ -66,20 +65,16 @@ function DownloadFormModal() {
 			const result = await axios.post(url, data);
 
 			if (result) {
-				const fileDownload = await new JsFileDownloader({
-					url: result.data.result.url,
+				window.open(result.data.result.url);
+
+				const confirm = await Swal.fire({
+					title: "Sukses!",
+					text: "Unduhan berhasil, terima kasih!",
+					icon: "success",
 				});
 
-				if (fileDownload) {
-					const confirm = await Swal.fire({
-						title: "Sukses!",
-						text: "Unduhan berhasil, terima kasih!",
-						icon: "success",
-					});
-
-					if (confirm) {
-						window.location.href = window.location.href;
-					}
+				if (confirm) {
+					window.location.href = window.location.href;
 				}
 			}
 		} catch (error) {
