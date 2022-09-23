@@ -1,5 +1,10 @@
 :root {
 	--pristine-green: #2ABDB2;
+	--pristine-dark-green: #0d5c55;
+	--pristine-medium-green: #1e8e85;
+	--pristine-light-green: #9BE3DD;
+	--pristine-medium-green-2: #1e8855;
+	--grey: #808080;
 }
 
 html,
@@ -27,6 +32,22 @@ a {
 .bg-white\:hover:hover {
 	background-color: white !important;
 }
+
+.bg-pristine-medium-green {
+	background-color: var(--pristine-medium-green);
+}
+
+.bg-pristine-medium-green\:hover:hover {
+	background-color: var(--pristine-medium-green) !important;
+}
+
+.bg-pristine-medium-green-2 {
+	background-color: var(--pristine-medium-green-2);
+}
+
+.bg-pristine-medium-green-2:\hover:hover {
+	background-color: var(--pristine-medium-green-2) !important;
+}
 /*  */
 
 /* Border colors */
@@ -47,11 +68,29 @@ a {
 .text-pristine-green\:hover:hover {
 	color: var(--pristine-green) !important;
 }
+
+.text-pristine-dark-green {
+	color: var(--pristine-dark-green);
+}
+
+.text-pristine-dark-green\:hover:hover {
+	color: var(--pristine-dark-green) !important;
+}
+
+.text-grey {
+	color: var(--grey);
+}
 /*  */
 
 /* Font Sizes */
 .font-size-12 {
 	font-size: 12px;
+}
+/*  */
+
+/* Shadows */
+.shadow-pristine-light-green {
+	box-shadow: 0px 10px 10px var(--pristine-light-green);
 }
 /*  */
 

@@ -47,7 +47,7 @@ function CartModal() {
 			</Modal.Body>
 			<Modal.Footer>
 				<Button variant="success" onClick={() => handleProcessClick()}>
-					Proses
+					Unduh Foto
 				</Button>
 			</Modal.Footer>
 		</Modal>

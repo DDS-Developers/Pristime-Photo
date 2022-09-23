@@ -43,7 +43,7 @@ function Album() {
 						>
 							<FontAwesomeIcon
 								icon={faFolder}
-								className="text-danger h-100"
+								className="text-grey h-100"
 							/>
 						</motion.div>
 						<div className="text-center">TANGGAL</div>

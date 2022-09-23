@@ -13,9 +13,11 @@ import { motion } from "framer-motion";
 import { useDispatch, useSelector } from "react-redux";
 import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
+import { useAlert } from "react-alert";
 
 function AlbumContent() {
 	const dispatch = useDispatch();
+	const alert = useAlert();
 
 	const albums = useSelector((state) => state.albums);
 	const photo = useSelector((state) => state.photo);
@@ -25,6 +27,12 @@ function AlbumContent() {
 		dispatch(setLargePhotoModalShow(true));
 	};
 	const handleAddToCartClick = (image) => {
+		if (albums.cart.length < 1) {
+			alert.show(
+				"Kamu sudah memilih 1 foto, cek foto pilihanmu di bawah."
+			);
+		}
+
 		const newCart = [...albums.cart, image];
 
 		dispatch(setCart(newCart));
@@ -51,12 +59,13 @@ function AlbumContent() {
 								className="img-fluid mb-2"
 							/>
 						</motion.div>
-						<Button
-							variant="warning"
+						<button
+							type="button"
+							className="btn text-white bg-pristine-medium-green-2 bg-pristine-medium-green-2:hover"
 							onClick={() => handleAddToCartClick(row)}
 						>
-							Tambah
-						</Button>
+							Pilih
+						</button>
 					</Col>
 				))}
 			</Row>

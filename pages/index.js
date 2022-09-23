@@ -30,10 +30,18 @@ import { DateTime } from "luxon";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import Button from "react-bootstrap/Button";
+import { transitions, positions, Provider as AlertProvider } from "react-alert";
+import AlertTemplate from "react-alert-template-basic";
 
 const Row = dynamic(() => import("react-bootstrap/Row"), {
 	ssr: false,
 });
+
+const alertOptions = {
+	position: positions.TOP_RIGHT,
+	timeout: 5000,
+	transition: transitions.SCALE,
+};
 
 function Index() {
 	const dispatch = useDispatch();
@@ -77,7 +85,7 @@ function Index() {
 	};
 
 	return (
-		<React.Fragment>
+		<AlertProvider template={AlertTemplate} {...alertOptions}>
 			<div className="main py-5">
 				<Container>
 					<Row className="justify-content-center mb-4">
@@ -85,7 +93,7 @@ function Index() {
 							<Image
 								src="/images/pristime-banner.jpg"
 								alt="Banner"
-								className="img-fluid mb-4"
+								className="img-fluid mb-4 shadow-pristine-light-green"
 							/>
 							<div>
 								<h1 className="h4 mb-0 text-center">
@@ -134,9 +142,12 @@ function Index() {
 									)}
 								</Col>
 								<Col xs lg={3} className="d-grid">
-									<Button type="submit" variant="danger">
+									<button
+										type="submit"
+										className="btn bg-pristine-medium-green bg-pristine-medium-green:hover text-white"
+									>
 										Tampilkan
-									</Button>
+									</button>
 								</Col>
 							</Row>
 						</Form>
@@ -145,13 +156,14 @@ function Index() {
 					{photo.is_shown && (
 						<Row className="mb-5">
 							<Col lg={2} className="d-grid">
-								<Button
-									variant="danger"
+								<button
+									type="button"
+									className="btn text-white bg-pristine-medium-green bg-pristine-medium-green:hover"
 									onClick={() => handleBackToAlbumClick()}
 								>
 									<FontAwesomeIcon icon={faChevronLeft} />{" "}
 									Kembali
-								</Button>
+								</button>
 							</Col>
 						</Row>
 					)}
@@ -206,7 +218,12 @@ function Index() {
 							className="d-grid"
 							onClick={() => handleShowCartContentClick()}
 						>
-							<Button variant="info">Lihat Isi Keranjang</Button>
+							<button
+								type="button"
+								className="btn bg-pristine-medium-green bg-pristine-medium-green:hover text-white"
+							>
+								Foto Terpilih
+							</button>
 						</Col>
 						<Col
 							xs={6}
@@ -214,7 +231,12 @@ function Index() {
 							className="d-grid"
 							onClick={() => handleProcessClick()}
 						>
-							<Button variant="success">Proses</Button>
+							<button
+								type="button"
+								className="btn bg-white text-pristine-dark-green text-pristine-dark-green:hover"
+							>
+								Unduh Foto
+							</button>
 						</Col>
 					</Row>
 				</Container>
@@ -222,7 +244,7 @@ function Index() {
 			<LargePhotoModal />
 			<CartModal />
 			<DownloadFormModal />
-		</React.Fragment>
+		</AlertProvider>
 	);
 }
 
