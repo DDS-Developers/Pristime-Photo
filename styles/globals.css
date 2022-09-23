@@ -1,8 +1,8 @@
 :root {
-	--pristine-green: #2ABDB2;
+	--pristine-green: #2abdb2;
 	--pristine-dark-green: #0d5c55;
 	--pristine-medium-green: #1e8e85;
-	--pristine-light-green: #9BE3DD;
+	--pristine-light-green: #9be3dd;
 	--pristine-medium-green-2: #1e8855;
 	--grey: #808080;
 }
@@ -56,7 +56,7 @@ a {
 }
 
 .border-pristine-green\:hover:hover {
-	border: 1px solid var(--pristine-green)
+	border: 1px solid var(--pristine-green);
 }
 /*  */
 
@@ -100,7 +100,7 @@ a {
 }
 
 .main {
-	background-image: url('/images/UiBgLand.png');
+	background-image: url("/images/UiBgLand.png");
 	background-size: cover;
 	min-height: 100vh;
 }
