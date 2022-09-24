@@ -100,8 +100,7 @@ function DownloadFormModal() {
 
 	return (
 		<Modal
-			// show={albums.is_download_form_modal_shown}
-			show={true}
+			show={albums.is_download_form_modal_shown}
 			size="lg"
 			centered
 			onHide={() => handleClose()}
