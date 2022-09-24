@@ -201,6 +201,14 @@ function Index() {
 								>
 									Kebijakan Privasi
 								</a>
+								<span className="mx-2">|</span>
+								<a
+									href="https://pristineofficial.com/syarat-dan-ketentuan"
+									target="_blank"
+									rel="noreferrer"
+								>
+									Syarat dan Ketentuan
+								</a>
 							</div>
 						</Col>
 					</Row>
