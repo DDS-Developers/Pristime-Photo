@@ -90,7 +90,7 @@ function Index() {
 					<Row className="justify-content-center mb-4">
 						<Col>
 							<Image
-								src="/images/pristime-banner.jpg"
+								src="/images/pristime-banner.png"
 								alt="Banner"
 								className="img-fluid mb-4 shadow-pristine-light-green"
 							/>
@@ -169,24 +169,29 @@ function Index() {
 					{photo.is_shown && <AlbumContent />}
 					<Row>
 						<Col>
+							<ul className="mb-5 font-size-12">
+								<li>
+									Seluruh foto official Pristime! Event 2022
+									dapat diunduh secara GRATIS.
+								</li>
+								<li>
+									Klik tombol masukkan ke keranjang di bawah
+									foto yang ingin kamu unduh, lalu tekan
+									tombol Lanjutkan di kanan bawah layar untuk
+									memroses pengunduhanmu.
+								</li>
+								<li>
+									Foto-foto tanpa watermark akan dikirimkan ke
+									alamat email yang sama saat mengikuti event.
+								</li>
+							</ul>
 							<div className="text-center font-size-12">
-								Seluruh foto official Pristime! Event 2022 dapat
-								diunduh secara GRATIS.
-							</div>
-							<div className="text-center font-size-12">
-								Klik tombol masukkan ke keranjang di bawah foto
-								yang ingin kamu unduh, lalu tekan tombol
-								Lanjutkan di kanan bawah layar untuk memroses
-								pengunduhanmu.
-							</div>
-							<div className="text-center mb-5 font-size-12">
-								Foto-foto tanpa watermark akan dikirimkan ke
-								alamat email yang sama saat mengikuti event.
-							</div>
-							<div className="text-center font-size-12">
-								<a href="#">Ketentuan Layanan</a>
-								<span className="mx-3">|</span>
-								<a href="#">Kebijakan Privasi</a>
+								<a
+									href="https://pristineofficial.com/syarat-dan-ketentuan"
+									target="_blank"
+								>
+									Kebijakan Privasi
+								</a>
 							</div>
 						</Col>
 					</Row>
