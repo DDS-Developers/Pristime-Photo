@@ -189,6 +189,7 @@ function Index() {
 								<a
 									href="https://pristineofficial.com/syarat-dan-ketentuan"
 									target="_blank"
+									rel="noreferrer"
 								>
 									Kebijakan Privasi
 								</a>
