@@ -153,8 +153,8 @@ function Index() {
 					)}
 					{albums.is_shown && <Album />}
 					{photo.is_shown && (
-						<Row className="mb-5">
-							<Col lg={2} className="d-grid">
+						<Row className="mb-5 justify-content-between align-items-center">
+							<Col lg={2} className="d-grid mb-3">
 								<button
 									type="button"
 									className="btn text-white bg-pristine-medium-green bg-pristine-medium-green:hover"
@@ -163,6 +163,14 @@ function Index() {
 									<FontAwesomeIcon icon={faChevronLeft} />{" "}
 									Kembali
 								</button>
+							</Col>
+							<Col lg={4}>
+								<div className="text-center text-lg-end">
+									Folder Tanggal{" "}
+									{DateTime.fromISO(photo.details.album_date)
+										.setLocale("id")
+										.toLocaleString(DateTime.DATE_FULL)}
+								</div>
 							</Col>
 						</Row>
 					)}
