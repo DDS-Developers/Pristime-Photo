@@ -3,7 +3,8 @@
 	--pristine-dark-green: #0d5c55;
 	--pristine-medium-green: #1e8e85;
 	--pristine-light-green: #9be3dd;
-	--grey: #808080;
+	--pristine-banner-text-green: #2dbeb5;
+	--grey: #bfbfbf;
 }
 
 /* Fonts */
@@ -84,6 +85,10 @@ a {
 .text-grey {
 	color: var(--grey);
 }
+
+.text-pristine-banner-text-green {
+	color: var(--pristine-banner-text-green);
+}
 /*  */
 
 /* Font Sizes */
@@ -110,7 +115,7 @@ a {
 }
 
 .main {
-	background-image: url("/images/UiBgLand.png");
+	background-image: url("/images/UiBgLand.jpg");
 	background-size: cover;
 	min-height: 100vh;
 }
