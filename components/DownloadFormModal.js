@@ -100,7 +100,8 @@ function DownloadFormModal() {
 
 	return (
 		<Modal
-			show={albums.is_download_form_modal_shown}
+			// show={albums.is_download_form_modal_shown}
+			show={true}
 			size="lg"
 			centered
 			onHide={() => handleClose()}
@@ -157,6 +158,15 @@ function DownloadFormModal() {
 								<Form.Text className="text-danger">
 									{errors.phone?.message}
 								</Form.Text>
+							</Col>
+						</Row>
+						<Row>
+							<Col>
+								<Form.Check
+									type="checkbox"
+									id="tnc-checkbox"
+									label="Saya menyetujui untuk tidak menyalahgunakan semua materi foto yang ada di website ini dalam bentuk apapun dan hal-hal lain sesuai syarat &amp; ketentuan Pristine8.6+"
+								/>
 							</Col>
 						</Row>
 					</div>
