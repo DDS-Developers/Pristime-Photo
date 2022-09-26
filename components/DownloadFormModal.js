@@ -65,7 +65,7 @@ function DownloadFormModal() {
 			const result = await axios.post(url, data);
 
 			if (result) {
-				window.open(result.data.result.url);
+				window.location.href = result.data.result.url;
 
 				const confirm = await Swal.fire({
 					title: "Sukses!",
