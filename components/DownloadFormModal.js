@@ -118,7 +118,6 @@ function DownloadFormModal() {
 							<Col>
 								<Form.Control
 									type="text"
-									placeholder="John Doe"
 									defaultValue=""
 									{...register("name")}
 								/>
@@ -134,7 +133,6 @@ function DownloadFormModal() {
 							<Col>
 								<Form.Control
 									type="email"
-									placeholder="john.doe@gmail.com"
 									defaultValue=""
 									{...register("email")}
 								/>
@@ -150,7 +148,6 @@ function DownloadFormModal() {
 							<Col>
 								<Form.Control
 									type="text"
-									placeholder="081234567890"
 									defaultValue=""
 									{...register("phone")}
 								/>
